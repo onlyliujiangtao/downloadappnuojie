@@ -24,6 +24,7 @@ body .box {
 body .box .logo img {
   width: 100px;
   height: auto;
+  border-radius: 20px;
 }
 
 body .box .btn {
