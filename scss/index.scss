@@ -1,0 +1,50 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/rectangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+    .title {
+        color: #fff;
+        font-size: 0.5rem;
+        text-align: center;
+        padding: 1rem 0;
+        box-sizing: border-box;
+    }
+
+    .box {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        .logo img {
+            width: 100px;
+            height: auto;
+        }
+        .btn{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            button{
+                width: 2rem;
+                height: 0.5rem;
+                margin-left: 0.5rem;
+                border: none;
+                border-radius: 5px;
+                background-color: orange;
+                color: #fff;
+                font-size: 0.28rem;
+            }
+        }
+    }
+    .footer{
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-size: 0.32rem;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+}

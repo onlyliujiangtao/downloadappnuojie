@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="description" content="download" />
+    <meta name="keywords" content="download" />
+    <meta name="author" content="ljt" />
+    <title>app下载</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script type="text/javascript" src="./js/plugins/flexible.min.js"></script>
+</head>
+
+<body>
+    <!-- 正文 -->
+    <div class="title">诺捷App</div>
+    <div class="box">
+        <div class="logo">
+            <img src="./images/logo.png" alt="">
+        </div>
+        <div class="btn">
+            <button onclick="download_btn(this)" data-type="ios">苹果下载</button>
+            <button onclick="download_btn(this)" data-type="android">安卓下载</button>
+        </div>
+    </div>
+    <div class="text" style="text-align: center;color: #fff;margin-top: 10px;">请用手机浏览器打开该页面</div>
+    <div class="text" style="text-align: center;color: #fff;margin-top: 10px;"><a href="./trust.html">苹果手机如何信任APP</a></div>
+    <div class="footer">
+        COPYRGINT &copy; 2021 NUOJIE GROUP
+    </div>
+    <script type="text/javascript" src="./js/plugins/jquery-2.1.4.min.js"></script>
+    <script>
+        function download_btn(dom) {
+            var btn_type = $(dom).data('type');
+            if (btn_type == 'android') {
+                window.location.href = "http://59.56.176.49:2237/upgrade/H5D1C703F.apk";
+            }else if(btn_type == 'ios'){
+                window.location.href = "itms-services://?action=download-manifest&url=https://onlyliujiangtao.github.io/downloadappnuojie/H5D1C703F.plist";
+            }
+        }
+    </script>
+</body>
+
+</html>
